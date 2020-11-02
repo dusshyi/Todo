@@ -1,6 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
+import { addTodo } from "../redux/actions";
 
-const AddTodo = () => {
+const AddTodo = ({ dispatch }) => {
   let input;
 
   const addTask = (e) => {
@@ -8,7 +10,8 @@ const AddTodo = () => {
 
     if (!input.value.trim()) return;
 
-    console.log(input.value);
+    dispatch(addTodo(input.value));
+    input.value = "";
   };
 
   return (
@@ -21,4 +24,4 @@ const AddTodo = () => {
   );
 };
 
-export default AddTodo;
+export default connect()(AddTodo);
