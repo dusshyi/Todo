@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "text": "Milk",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "text": "Onion",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "text": "Brocoli",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "text": "Orange",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "text": "Apple",
+    "completed": true
+  }
+]

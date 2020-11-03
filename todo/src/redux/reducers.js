@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
 import { todoListFilters } from "./actions";
 
-const todos = (state = [], action) => {
+const listData = require("../todoList.json");
+
+const todos = (state = listData, action) => {
   switch (action.type) {
     case "ADD_TODO":
       return [
